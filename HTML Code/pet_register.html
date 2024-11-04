@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Functional Code/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="menu">
+                <li id="menu-item"><a href="index.html">Home</a></li>
+                <li id="menu-item"><a href="search.html">Search Now</a></li>
+                <li id="menu-item"><a href="about.html">About Us</a></li>
+                <li id="menu-item"><a href="contact.html">Contact Us</a></li>
+                <a href="login.html" id="menu-item"><button id="menu-item">Login / Register</button></a>
+            </ul>
+        </nav>
+    </header>
+    <br>
+    <h2 style="margin-bottom: 20px;">Register your loving once</h2>
+
+    <section class="login-section">
+        <div class="container">
+        <form id="registration-form" method="POST" action = "../PHP Code/petadd.php" enctype="multipart/form-data">    
+		<label for="pet-name">Pet Name:</label>
+                <input type="text" id="pet-name" name="pet-name" required>
+    
+                <label for="pet-breed">Pet Breed:</label>
+                <input type="text" id="pet-breed" name="pet-breed" required>
+    
+                <label for="pet-age">Pet Age:</label>
+                <input type="number" id="pet-age" name="pet-age" required>
+
+                <label for="description">Description:</label>
+                <textarea style="width: 100%;" id="description" name="description" rows="10" required></textarea>
+
+                <label for="pet-image">Upload Pet Image:</label>
+                <input type="file" id="pet-image" name="pet-image" accept="image/*" required>
+
+                <button type="submit" style="width: 100%;">Register</button>
+            </form>
+        </div>
+    </section>
+
+    <br><br>
+
+    <footer>
+        <p>&copy; 2023 Dhanushka Wijekon</p>
+    </footer>
+
+</body>
+</html>

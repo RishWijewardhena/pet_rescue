@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Functional Code/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="menu">
+                <li id="menu-item"><a href="index.html">Home</a></li>
+                <li id="menu-item"><a href="search.html">Search Now</a></li>
+                <li id="menu-item"><a href="about.html">About Us</a></li>
+                <li id="menu-item"><a href="contact.html">Contact Us</a></li>
+                <a href="login.html" id="menu-item"><button id="menu-item">Login / Register</button></a>
+            </ul>
+        </nav>
+    </header>
+    <br>
+
+    <h2 style="margin-bottom: 20px;">Login to your account for better performance!</h2>
+
+    <section class="login-section">
+        <form action="../PHP Code/login.php" method="POST">
+            <label id="f-lable" for="f-email">Enter your email :</label>
+            <input type="email" name="email" id="f-email"><br>
+            <label id="f-lable" for="f-pass">Enter your password :</label>
+            <input type="password" name="pass" id="f-pass"><br>
+            <input type="submit" value="Login Now" id="f-sub"><br>
+            <p>Don't you have a account? <a href="../HTML code/register.html">Register Now!</a></p>
+        </form>
+    </section>
+
+    <br><br>
+
+    <footer>
+        <p>&copy; 2023 Dhanushka Wijekon</p>
+    </footer>
+
+</body>
+</html>
